@@ -1,0 +1,138 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { font: 12px/20px Arial, Helvetica, sans-serif; color: #000; background: #FFF; }
+
+:focus { outline: 0; }
+
+
+a{ color: #000; }
+a:link, a:visited{ text-decoration: none; }
+a:hover, a:active{ text-decoration: none; }
+a img{ border: none; }
+
+
+/* Layout */
+.boundingBox{ margin: 0 auto; width: 90%; }
+
+.globalNav{
+	position:fixed;
+	width: 90%;
+	top: 0px;
+}
+
+.pageTitle{
+	position:fixed;
+	width: 90%;
+	line-height: 30px;
+	color: #000;
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', 'HelveticaNeue','Helvetica Neue','Helvetica Neue',Arial,Helvetica,sans-serif;
+	font-size: 64px;
+	font-weight: lighter;
+	padding-bottom: 20px;
+	background-color: #FFF;
+	top: 50px;
+}
+
+.contactContent{
+		position:fixed;
+	    top: 150px;		
+		width: 1400px;
+}
+
+.logo{	
+	float:left;
+	padding-right: 100px;
+}
+
+/* Content */
+
+#content{ padding: 20px 0; }
+
+/* Content - Portfolio Listing */
+
+ul#about-title{line-height: 30px; color: #000; font-family: 'HelveticaNeue','Helvetica Neue','Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 48px; font-weight: normal; padding-bottom: 20px;  background-color: #FFF;  }
+
+
+ul#portfolio-filter{ margin: -25px 0; padding: 0; height: 64px; padding-left: 0px; line-height: 64px; background-color: #FFF; }
+ul#portfolio-filter li{ display: inline; }
+ul#portfolio-filter a{ margin-right: 20px; padding: 0px; background: #FFF; color: #E8ECEB; 
+font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 48px; font-weight: lighter; text-decoration: none}
+ul#portfolio-filter a:hover{ color: #000; } 
+ul#portfolio-filter a.current{ background-color: #FFF; color: #000; }
+
+
+ul#portfolio-list{ margin: 110px 0 0 0; padding: 0; list-style: none; }
+ul#portfolio-list li{ width: 165px; height: 160px; display: block; float: left; margin-right: 18px; overflow: hidden; }
+ul#portfolio-list li a{ display: block; width: 163px; height: 120px; overflow: hidden; border: none; background: #FFF; }
+ul#portfolio-list li p{ font-size: 10px; line-height: 15px; color: #000; margin: 5px 0; 
+font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif; }
+
+
+/* Global Navigation */
+ul#global-nav-bar{ color: #FFF; background-color: #000; text-align: right; }
+ul#global-nav-bar li{ display: inline; }
+ul#global-nav-bar li a{ color: #FFF; background-color: #000; text-align: right; display: inline; margin-right: 10px;  font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif;}
+ul#global-nav-bar a:hover{ color: #FD4F59; } 
+
+
+
+#socials a {
+	filter:alpha(opacity=30);
+	-moz-opacity: 0.3;
+	opacity: 0.3;
+}
+
+#socials a:hover {
+	filter:alpha(opacity=1);
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+
+
+.case{
+		width: 200px; height: 150px;float: left; position: relative; 
+		background: #FFF;
+		font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif;
+		cursor: pointer;
+		text-align: center;
+		color: #000;
+}
+.case p{
+	background: #000;
+	color: #FFF;
+	
+}
+
+.case p:hover{
+		background: #000;
+		color: #FD4F59;
+}
+
+
+/*Project Descriptions*/
+.desc{
+		width: 450px; height: 300px; display: none; top: 20; position: absolute;
+		margin: 0;
+		font-size: 12px;
+		background-color: #E8ECEB;
+		filter:alpha(opacity=80);   /* Internet Explorer       */
+        -moz-opacity:0.8;           /* Mozilla 1.6 and below   */
+        opacity: 0.8;               /* newer Mozilla and CSS-3 */
+		cursor: crosshair;
+
+}

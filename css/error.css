@@ -1,0 +1,87 @@
+/* @override http://newmediacampaigns.com/css/compiled.css */
+
+/* Eric Meyer Reset */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { font: 12px/20px Arial, Helvetica, sans-serif; color: #000; background: #FFF; }
+
+:focus { outline: 0; }
+
+
+a{ color: #000; }
+a:link, a:visited{ text-decoration: none; }
+a:hover, a:active{ text-decoration: none; }
+a img{ border: none; }
+
+
+/* Layout */
+.boundingBox{ margin: 0 auto; width: 780px; }
+
+
+.sandboxContent{
+		position:relative;
+	    top: 150px;
+		font-family: 'HelveticaNeue','Helvetica Neue','Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+
+.logo{	
+	float:left;
+	padding-right: 100px;
+}
+
+/* Content */
+
+#content{ padding: 20px 0; }
+
+/* Content - Portfolio Listing */
+
+ul#about-title{line-height: 30px; color: #000; font-family: 'HelveticaNeue','Helvetica Neue','Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 48px; font-weight: normal; padding-bottom: 20px;  background-color: #FFF;  }
+
+
+ul#portfolio-filter{ margin: -25px 0; padding: 0; height: 64px; padding-left: 0px; line-height: 64px; background-color: #FFF; }
+ul#portfolio-filter li{ display: inline; }
+ul#portfolio-filter a{ margin-right: 20px; padding: 0px; background: #FFF; color: #E8ECEB; 
+font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 48px; font-weight: lighter; text-decoration: none}
+ul#portfolio-filter a:hover{ color: #000; } 
+ul#portfolio-filter a.current{ background-color: #FFF; color: #000; }
+
+
+ul#portfolio-list{ margin: 110px 0 0 0; padding: 0; list-style: none; }
+ul#portfolio-list li{ width: 165px; height: 160px; display: block; float: left; margin-right: 18px; overflow: hidden; }
+ul#portfolio-list li a{ display: block; width: 163px; height: 120px; overflow: hidden; border: none; background: #FFF; }
+ul#portfolio-list li p{ font-size: 10px; line-height: 15px; color: #000; margin: 5px 0; 
+font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif; }
+
+
+/* Global Navigation */
+ul#global-nav-bar{ color: #FFF; background-color: #000; text-align: right; }
+ul#global-nav-bar li{ display: inline; }
+ul#global-nav-bar li a{ color: #FFF; background-color: #000; text-align: right; display: inline; margin-right: 10px;  font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif;}
+ul#global-nav-bar a:hover{ color: #FD4F59; } 
+
+
+#skillsColumns{
+ text-align: justify;
+ -moz-column-count: 3;
+ -moz-column-gap: 0.5em;
+ -moz-column-rule: none;
+ -webkit-column-count: 3;
+ -webkit-column-gap: 0.5em;
+ -webkit-column-rule: none;
+}

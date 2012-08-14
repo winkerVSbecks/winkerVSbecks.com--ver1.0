@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- <link rel="shortcut icon" href="images/winkerVSbecksFavicon.ico" mce_href="images/winkerVSbecksFavicon.ico"/> -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Gather Neccesaties</title>
+	<script src="js/jquery-1.6.4.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- 	<script src="script.js" type="text/javascript" charset="utf-8"></script> --> 
+<!-- 	<link href='http://fonts.googleapis.com/css?family=Marvel|Pompiere' rel='stylesheet' type='text/css'> -->
+<style>
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+:focus 
+{ 
+	outline: 0; 
+}
+
+
+a{ color: #000; }
+a:link, a:visited{ text-decoration: none; }
+a:hover, a:active{ text-decoration: none; }
+a img{ border: none; }
+
+body 
+{
+	font: 12px Helvetica, sans-serif; 
+	color: #fff; 
+	/* background: #E9E9E8;  #F6F6F6;  */
+	margin:50px 0px; padding:0px;
+	text-align:center;		
+
+	min-height: 600px;
+	
+	background: #918F90;
+	
+	background-image: url("images/fakePhotoshoot.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	
+}
+
+.container
+{
+    margin: 45px auto 0;
+    padding: 0;
+    width: 960px;
+    height: auto;
+}
+.enter
+{
+	margin: 50px auto 0;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    z-index: 1000;
+    border-radius: 50px;
+    background: #030104;
+    margin-top: 300px;
+    
+    line-height: 100px;
+    
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -moz-box-shadow: 0 0 45px #777;
+    
+    cursor: pointer;
+}
+.enter a
+{
+	color: #fff;
+}
+.enter a:hover
+{
+	color: #CACBCC;
+}
+.enter:hover
+{
+    width: 110px;
+    height: 110px;
+    z-index: 1000;
+    border-radius: 55px;
+    line-height: 110px;
+}
+.enter:active
+{
+	margin-top: 305px;
+}
+
+
+.title
+{	
+	/* font-family: 'Marvel', sans-serif; */
+	/* font-family: 'Pompiere', cursive; */
+	font-size: 24px;
+	text-align: center;
+	background: none; /* #555; */
+	font-weight: lighter;
+	width: 380px;
+	height: 40px;
+	padding-top: 10px;
+	position: fixed;
+}
+
+.navContainer
+{	
+	/* font-family: 'Marvel', sans-serif; */
+	font-family: Verdana, 'Pompiere', cursive;
+	width: 384px;
+	margin-top: 65px;
+	position: fixed;
+	margin-left: -4px;
+}
+
+.nav
+{	
+	font-family: 'Marvel', sans-serif; 
+/* 	font-family: 'Pompiere', cursive; */
+	font-size: 12px;
+	text-align: center;
+	background: #000;
+	color: #fff;
+	font-weight: lighter;
+	height: 20px;
+/*	padding-top: 5px;
+	padding-left: 40.9px;
+	padding-right: 40.9px;
+	padding-bottom: 2px;
+*/
+	width: 124px;
+	height: auto;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	position: relative;
+	float: left;
+	margin-left: 4px;
+}
+
+.nav a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.nav a:hover
+{
+	color: #ccc;
+}
+
+
+/* Shadow Font */
+
+#boom {
+	font-size: 0px;
+	font-family: sans-serif;
+	line-height: 220px;
+	font-weight: bold;
+	height: auto;
+	color: #DED3CF;
+	width: 10px;
+	position: absolute;
+	left: 100px;
+	
+	text-shadow: 3px 3px #bfbac2;
+}
+
+#to_cool {
+	font-size: 180px;
+	font-family: sans-serif;
+	line-height: 220px;
+	font-weight: bold;
+	height: 300px;
+	color: rgb(255,141,255);
+	width: 1160px;
+	position: absolute;
+	left: 100px;
+	transition: text-indent .3s ease-in;
+    -o-transition: text-indent .3s ease-in;
+    -moz-transition: text-indent .3s ease-in;
+    -webkit-transition: text-indent .3s linear;
+}
+
+#to_cool canvas {
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+
+#to_cool.active {
+	text-indent: -55px;
+}
+
+#arttag
+{
+    color: #fff;
+    z-index: 100;
+    width:300px;
+    height:100px;
+    position: absolute;
+	top: 450px;
+	left: 1050px;
+}
+#fixed
+{
+	text-align: center;
+    color: #fff;
+    z-index: 100;
+    width:auto;
+    height:50px;
+    position: absolute;
+	top: 500px;
+	left: 600px;	
+}
+#fixed2
+{
+	text-align: center;
+    color: #000;
+    z-index: 100;
+    width:auto;
+    height:auto;
+    position: absolute;
+	top: 175px;
+	left: 675px;
+	background: #fff;
+	border: 5px solid white;
+	border-radius: 5px; 
+	display: none;	
+	box-shadow: 0px 0px 5px #000;
+
+}
+#fixed3
+{
+	text-align: center;
+    color: #000;
+    z-index: 100;
+    width:auto;
+    height:auto;
+    position: absolute;
+	top: 150px;
+	left: 575px;
+	background: #fff;
+	border: 5px solid white;
+	border-radius: 5px; 
+	display: none;	
+	box-shadow: 0px 0px 5px #000;
+}
+#fixed4
+{
+	text-align: center;
+    color: #000;
+    z-index: 100;
+    width:auto;
+    height:auto;
+    position: absolute;
+	top: 175px;
+	left: 475px;
+	background: #fff;
+	border: 5px solid white;
+	border-radius: 5px; 
+	display: none;
+	box-shadow: 0px 0px 5px #000;	
+}
+</style>
+</head>
+
+<body>
+		<div id="fixed">
+		<button id="go1">Say What?</button>
+		<button id="go2">I'm not doing that</button>
+		</div>
+		
+		<div id="fixed2">
+		Do a fake photoshoot.
+		</div>
+		<div id="fixed3">
+		Draw a million stars.
+		</div>
+		<div id="fixed4">
+		Build a horse!
+		</div>
+<script>  
+	var task = 0;
+	
+	$("#go1").click(function(){
+		if(task == 0){
+			$('#fixed2').show();
+			$('#fixed3').hide();
+			$('#fixed4').hide();
+		}
+		if(task == 1){
+			$('#fixed3').show();
+			$('#fixed2').hide();
+			$('#fixed4').hide();
+		}
+		if(task == 2){
+			$('#fixed4').show();
+			$('#fixed2').hide();
+			$('#fixed3').hide();
+		}
+		task=task+1;
+		if(task > 2)
+		{ task = 0;}
+	});
+	$("#go2").click(function(){
+		window.location = "success_failure.html";	
+	});
+
+</script>
+</body>
+</html>
+
+
+
+

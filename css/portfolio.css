@@ -1,0 +1,113 @@
+/* @override http://newmediacampaigns.com/css/compiled.css */
+
+/* Eric Meyer Reset */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { font: 12px/20px Arial, Helvetica, sans-serif; color: #000; background: #FFF; }
+
+:focus { outline: 0; }
+
+
+a{ color: #000; }
+a:link, a:visited{ text-decoration: none; }
+a:hover, a:active{ text-decoration: none; }
+a img{ border: none; }
+
+
+/* Layout */
+.boundingBox{ margin: 0 auto; width: 80%; }
+
+.globalNav{
+	position:fixed;
+	width: 80%;
+	top: 0px;
+	z-index: 101;
+}
+
+.nav{
+	position:fixed;
+	width: 90%;
+	z-index: 100;
+}
+
+.nav2{
+	position:relative;
+	width: 2400px;
+	z-index: 100;
+}
+
+/* Content */
+
+#content{ padding: 20px 0; }
+
+/* Content - Portfolio Listing */
+
+ul#work-title{line-height: 30px; color: #000; font-family: 'HelveticaNeue','Helvetica Neue','Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 16px; font-weight: normal; padding-bottom: 20px;  background-color: #FFF;  }
+
+
+ul#portfolio-filter{ margin: -25px 0; padding: 0; height: 64px; padding-left: 0px; line-height: 64px; background-color: #FFF; }
+ul#portfolio-filter li{ display: inline; }
+ul#portfolio-filter a{ margin-right: 20px; padding: 0px; background: #FFF; color: #E8ECEB; 
+font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 48px; font-weight: lighter; text-decoration: none}
+ul#portfolio-filter a:hover{ color: #000; } 
+ul#portfolio-filter a.current{ background-color: #FFF; color: #000; }
+
+
+ul#portfolio-list{ margin: 110px 0 0 0; padding: 0; list-style: none;}
+ul#portfolio-list li{ width: 200px; height: 200px; display: block; float: left; margin-right: 20px; }
+ul#portfolio-list li a{ display: block; width: 200px; height: 200px; overflow: hidden; border: none; background: transparent; 
+            -webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;}
+/*
+ul#portfolio-list li p{ font-size: 10px; line-height: 15px; color: #000; margin: 5px 0; 
+font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif; }
+ul#portfolio-list li a:hover{ 
+            -webkit-transform: scale(1.05);
+			-moz-transform: scale(1.05);
+			transform: scale(1.05); }*/
+
+
+/* Global Navigation */
+ul#global-nav-bar{ color: #FFF; background-color: #000; text-align: right; }
+ul#global-nav-bar li{ display: inline; }
+ul#global-nav-bar li a{ color: #FFF; background-color: #000; text-align: right; display: inline; margin-right: 10px;  font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif;}
+ul#global-nav-bar a:hover{ color: #FD4F59; } 
+
+
+.case{
+		width: 200px; height: 150px;float: left; position: relative; 
+		background: transparent;
+		font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif;
+		cursor: pointer;
+		text-align: center;
+		z-index: 0;
+		border: 1px solid #eee;
+}
+
+
+/*Project Descriptions*/
+.desc{
+		width: 200px; height: 150px; display: none; bottom: 0; position: absolute;
+		font-size: 12px;
+		background-color: #E8ECEB;
+		filter:alpha(opacity=90);   /* Internet Explorer       */
+        -moz-opacity:0.9;           /* Mozilla 1.6 and below   */
+        opacity: 0.9;               /* newer Mozilla and CSS-3 */
+
+}

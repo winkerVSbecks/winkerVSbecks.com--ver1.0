@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- <link rel="shortcut icon" href="images/winkerVSbecksFavicon.ico" mce_href="images/winkerVSbecksFavicon.ico"/> -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Links</title>
+	<script src="js/jquery-1.6.4.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- 	<script src="script.js" type="text/javascript" charset="utf-8"></script> --> 
+<!-- 	<link href='http://fonts.googleapis.com/css?family=Marvel|Pompiere' rel='stylesheet' type='text/css'> -->
+<link href='http://fonts.googleapis.com/css?family=Cousine:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+<style>
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+:focus 
+{ 
+	outline: 0; 
+}
+
+
+a{ color: #000; }
+a:link, a:visited{ text-decoration: none; }
+a:hover, a:active{ text-decoration: none; }
+a img{ border: none; }
+
+body 
+{
+	font: 12px Helvetica, sans-serif; 
+	color: #fff; 
+	/* background: #E9E9E8;  #F6F6F6;  */
+	margin:50px 0px; padding:0px;
+	text-align:center;		
+
+	min-height: 650px;
+	
+	background: #181010;
+	
+	background-image: url("images/bgPattern.png");
+	background-repeat: repeat;
+	background-position: center;
+	
+}
+
+.container
+{
+    margin: 45px auto 0;
+    padding: 0;
+    width: 960px;
+    height: auto;
+}
+.enter
+{
+	margin: 50px auto 0;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    z-index: 1000;
+    border-radius: 50px;
+    background: #030104;
+    margin-top: 300px;
+    
+    line-height: 100px;
+    
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -moz-box-shadow: 0 0 45px #777;
+    
+    cursor: pointer;
+}
+.enter a
+{
+	color: #fff;
+}
+.enter a:hover
+{
+	color: #CACBCC;
+}
+.enter:hover
+{
+    width: 110px;
+    height: 110px;
+    z-index: 1000;
+    border-radius: 55px;
+    line-height: 110px;
+}
+.enter:active
+{
+	margin-top: 305px;
+}
+
+
+.title
+{	
+	/* font-family: 'Marvel', sans-serif; */
+	/* font-family: 'Pompiere', cursive; */
+	font-size: 24px;
+	text-align: center;
+	background: none; /* #555; */
+	font-weight: lighter;
+	width: 380px;
+	height: 40px;
+	padding-top: 10px;
+	position: fixed;
+}
+
+.navContainer
+{	
+	/* font-family: 'Marvel', sans-serif; */
+	font-family: Verdana, 'Pompiere', cursive;
+	width: 384px;
+	margin-top: 65px;
+	position: fixed;
+	margin-left: -4px;
+}
+
+.nav
+{	
+	font-family: 'Marvel', sans-serif; 
+/* 	font-family: 'Pompiere', cursive; */
+	font-size: 12px;
+	text-align: center;
+	background: #000;
+	color: #fff;
+	font-weight: lighter;
+	height: 20px;
+/*	padding-top: 5px;
+	padding-left: 40.9px;
+	padding-right: 40.9px;
+	padding-bottom: 2px;
+*/
+	width: 124px;
+	height: auto;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	position: relative;
+	float: left;
+	margin-left: 4px;
+}
+
+.nav a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.nav a:hover
+{
+	color: #ccc;
+}
+
+
+/* Shadow Font */
+
+#boom {
+	font-size: 0px;
+	font-family: sans-serif;
+	line-height: 220px;
+	font-weight: bold;
+	height: auto;
+	color: #DED3CF;
+	width: 10px;
+	position: absolute;
+	left: 100px;
+	
+	text-shadow: 3px 3px #bfbac2;
+}
+
+#to_cool {
+	font-size: 180px;
+	font-family: sans-serif;
+	line-height: 220px;
+	font-weight: bold;
+	height: 300px;
+	color: rgb(255,141,255);
+	width: 1160px;
+	position: absolute;
+	left: 100px;
+	transition: text-indent .3s ease-in;
+    -o-transition: text-indent .3s ease-in;
+    -moz-transition: text-indent .3s ease-in;
+    -webkit-transition: text-indent .3s linear;
+}
+
+#to_cool canvas {
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+
+#to_cool.active {
+	text-indent: -55px;
+}
+
+#leg
+{
+	position: absolute;
+	top: 420px;
+	left: 189px;
+	background-image: url("robot_leg.png");
+	z-index: 1000;
+	width: 220px;
+	height: 371px;
+}
+#bubble{
+	position: absolute;
+	top: 250px;
+	left: 770px;
+	width:200px;
+	height:167px;
+	background-image: url("images/speechBubble.png");
+	background-repeat:no-repeat;
+	background-position:center;
+	opacity: 0;
+}
+#fixed
+{
+	position: absolute;
+	top: 75px;
+	left: 490px;
+    text-align: center;
+    color: #fff;
+    width:128px;
+    height:24px;
+    cursor: pointer;
+    background-image: url("images/installation.png");
+}
+#fixed:active{
+	background-image: url("images/intallationClick.png");
+}
+#fixed2
+{
+	position: absolute;
+	top: 75px;
+	left: 630px;
+    text-align: center;
+    color: #fff;
+    width:80px;
+    height:24px;
+    cursor: pointer;
+    background-image: url("images/next.png");
+}
+#fixed2:active{
+	background-image: url("images/nextClick.png");
+}
+#fixed3
+{
+	position: absolute;
+	top: 10%;
+	left: 24%;
+    text-align: center;
+    color: #fff;
+    width:720px;
+    height:537px;
+    background-image: url("images/installation.gif");
+    display: none;
+    z-index: 100;
+}
+#fixedBig{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #000;
+    z-index: 99;
+    width:100%;
+    height:100%;
+    display: none;
+}
+#fixed4
+{
+	position: absolute;
+	top: 630px;
+	left: 1010px;
+    text-align: center;
+    color: #fff;
+    width:50px;
+    height:50px;
+    display: none;
+    z-index: 101;
+    cursor: pointer;
+}
+
+#article
+{
+	margin: 5% 20% 0 ;
+    text-align: center;
+    color: #424242;
+    width:60%;
+    height:auto;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Cousine', sans-serif;
+    line-height: 36px;
+}
+</style>
+</head>
+
+<body>
+<div id="article">
+<b># Links: 1024x768</b><br />
+I/M/D - 2011<br />
+Writing Life/Conceptualization<br />
+Varun Vachhar<br />
+<br />
+Wolfgang Tillmans is a fine-art photographer who remaining within the traditional genres of portraiture, landscape and still life produces powerful and sometimes shocking images. Larry Clark's film 'Kids' is a dark and disturbing film about teenagers in New York city. Raw confessional imagery, the resonant link between these two, and the naked depiction of ideas is what served as a foundation for my piece '1024x768'.
+<br /><br />
+Kids is Larry Clark’s vision of what journey through adolescence feels like – where the lives of these characters revolve around sex, drugs, stealing, abusing and hanging out with friends. The film follows a group of friends through a period of twenty four hours with a scattering of loosely connected stories lacking any obvious story line. The idea quite similar to that of Tillmans': 'Pictures, in order to see the world'. He is noted for displaying his photos in an offhand and scattered manner – on walls and tables, sometimes just pinned or taped. The raw documentary style of his work is also used in the filming of 'Kids'. The images form a kaleidoscope of honest emotions, capturing people in that rare moment where they have lost their inhibitions in front of the camera. Presented together in such overwhelming quantities that the imagery speaks for itself, no captions or narrative is necessary. The underlying story, not blatantly obvious, seeps into your being gradually, almost as if through osmosis. 
+<br /><br />
+Despite the fact that both the film and Tillmans' work uses a lot of raw and shocking imagery, there is a sense of authenticity to it. They both engender this feeling in the viewer where they can relate to the events. The scene or image they are viewing is something that could have been a part of their life, but not necessarily to the dramatic extremes portrayed. It is this genuine and nude portrayal of the subject matter which inspired me most for my own work.
+<br /><br />
+My installation is drawn out of the idea of showcasing the tangible side of a pixel. It is a material which tends to be shrouded  in mystery, yet is the core medium and form used in digital/new media art. Tillmans believes his photograms to be reality, not a copy of reality, like a painting. A pixel on screen, to me, is similarly reality. It exists in physical space, it is real, not a pseudo realistic phenomenon which it is often believed to be. As a medium it manages something that no other medium has ever attained – true two dimensionality. It exists merely as flicker of light, small and lacking any depth. With each iteration of the technology cycle it has also shrunken within it's two dimensions – approaching a dimensionless stature. It is this infinitesimal nature of the material which makes it strenuous for the creators to interact with it. Several supporting elements are required in order to control the medium: programming, electronics and softwares. Therefore, to be able witness the true nature of this material, I believe, it is important for one to interact with it personally, removing these supplementary layers of complexity.
+<br /><br />
+A pixel when presented on screen is volatile, existing only for a fraction of a second before dying out. The supporting machinery has the task of constantly rejuvenating it in order for us to view it's message. While interacting with the installations, the viewer is asked to repeat this process on their own, stripping the need of supporting machinery. It is at this point that the pixel is available to them, lacking any sort of inhibitions, much like the subjects of Tillmans' photos and the characters in 'Kids'. 
+<br /><br />
+While watching the film 'Kids' or looking at some of the photographs of Wolfgang Tillmans, I couldn't help but reflect a part of my life on these scenes presented in front of me. Not quite to the same extent of tensions as in the film, but it was still reminiscent of certain times from my own adolescence. It is this familiarity which was exploited and extrapolated to showcase a gruesome reality, of the lack of respect for societal norms, within this group of people. It is this very pattern which was replicated in my installation by placing two other mediums next to the pixel. A canvas with charcoal and a television with a magnet accompany the 'pixels'. The viewer is asked to mirror his/her actions over these three mediums. Therefore, the familiar act of drawing with charcoal or running a magnet over the television helps bring forth the idea of moulding pixels. The use of these elements and certain aids such as a scanner and a computer is an ode to the style used by the original two works: using a heterogeneous collection of imagery to tell a story. 
+<br /><br />
+Displaying ideas in the raw is the major inspiration I derived from these works. However, in applying this concept to my chosen subject I was pushed to question the very notion of rawness in modern technologies. Through research and personal experiences, it was my conclusion that this rawness could only be achieved by stripping away the blanket of assisted interaction: the pre-programmed interfaces which are set forth to assist in creation.  They distract and prevent the user from really understanding the true nature of the material while constantly questioning it's limitations. By removing these inhibitions I hope to have presented the material in it's true form. Ready to be moulded by the user with no concern for protocols. 
+<br /><br />
+
+<b># Bibliography</b><br />
+"Larry Clark's Kids - Unforgivably Lurid, Vile and Repugnant". Epinions. 6 Dec 2003. {http://www.epinions.com/review/mvie_mu-1065123/content_120989912708} 
+<br /><br />
+Cumming, Laura. "Wolfgang Tillmans". The Guardian: Art and Design. 27 June 2010. {http://www.guardian.co.uk/artanddesign/2010/jun/27/wolfgang-tillmans-serpentine-review-cumming}
+<br /><br />
+Saltz, Jerry. "Developing". New York Art: The Art Review. 14 Feb 2010 .{http://nymag.com/arts/art/reviews/63774/#}
+<br /><br />
+Strau, Jostef. "Alongside the abstract plane, dots and bangs of latent evidence and true relativity exposed". Serpentine Gallery. 2010. {http://tillmans.co.uk/images/stories/pdf/2010_josef_strau_serpentine_cat.pdf}
+<br /><br />
+Bracewell, Michael. "Everywhere, all the time, and at once: the art of Wolfgang Tillmans". Serpentine Gallery. 2010. {http://tillmans.co.uk/images/stories/pdf/2010_michael_bracewell_serpentine_cat.pdf}
+<br /><br />
+"Installation Views Archive". 2006-2011. {http://tillmans.co.uk/index.php/Table/installation_views/}
+</div>
+		<div id="fixed">
+		</div>
+		<div id="fixed2">
+		</div>
+		<div id="fixed3">
+		</div>
+		<div id="fixedBig">
+		</div>
+		<div id="fixed4">
+		close
+		</div>
+<script>  
+	$("#fixed").click(function(){
+ 		$('#fixed3').show();
+ 		$('#fixed4').show();
+ 		$('#fixedBig').show();
+	});
+	
+	$("#fixed4").click(function(){
+ 		$('#fixed3').hide();
+ 		$('#fixed4').hide();
+ 		$('#fixedBig').hide();
+	});
+	
+	$("#fixed2").click(function(){
+		window.location = "White_Cube.html";
+	});
+</script>
+</body>
+</html>
+
+
+
+

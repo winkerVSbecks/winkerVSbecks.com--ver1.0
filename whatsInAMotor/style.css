@@ -1,0 +1,174 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+:focus 
+{ 
+	outline: 0; 
+}
+
+
+a{ color: #000; }
+a:link, a:visited{ text-decoration: none; }
+a:hover, a:active{ text-decoration: none; }
+a img{ border: none; }
+
+body 
+{
+	font: 12px Helvetica, sans-serif; 
+	color: #fff; 
+	/* background: #E9E9E8;  #F6F6F6;  */
+	margin:50px 0px; padding:0px;
+	text-align:center;		
+
+	background: -moz-linear-gradient(90deg,#D9D9D7 0,#fff 100%) fixed;
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(0%,#D9D9D7),color-stop(100%,#fff)) fixed;
+	background: -webkit-linear-gradient(left bottom,left top,#D9D9D7 0,#fff 100%) fixed;
+	background: -o-linear-gradient(left,#D9D9D7 0,#fff 100%) fixed;
+	background: linear-gradient(left,#D9D9D7 0,#fff 100%) fixed;
+
+    background: url("/img/background.png") repeat scroll center top #EFEFEF;
+    
+    background: #DCD5D6;
+}
+
+.containerNav
+{
+    margin: 0px auto 0;
+    padding: 0;
+    width: 960px;
+    height: auto;
+}
+
+.container
+{
+    margin: 0px auto 0;
+    padding: 0;
+    width: 960px;
+    height: 800px;
+    /* padding-top: 125px; */
+}
+
+.fixed
+{
+/*
+	top: 50px;
+	left:50%;
+	
+	width:300px;
+	margin:0px auto;
+	position: fixed;
+*/
+	margin: 0px auto 0;
+    text-align: center;
+    width: 380px;
+    color: #fff;
+    z-index: 1000;
+}
+
+
+.title
+{	
+	/* font-family: 'Marvel', sans-serif; */
+	/* font-family: 'Pompiere', cursive; */
+	font-size: 24px;
+	text-align: center;
+	background: none; /* #555; */
+	font-weight: lighter;
+	width: 380px;
+	height: 40px;
+	padding-top: 0px;
+	position: fixed;
+	z-index: 100;
+}
+
+.navContainer
+{	
+	/* font-family: 'Marvel', sans-serif; */
+	font-family: Verdana, 'Pompiere', cursive;
+	width: 384px;
+	margin-top: 55px;
+	position: fixed;
+	margin-left: -4px;
+	z-index: 100;
+}
+
+.nav
+{	
+	font-family: 'Marvel', sans-serif; 
+	
+/* 	font-family: 'Pompiere', cursive; */
+	font-size: 14px;
+	text-align: center;
+	background: #000;
+	color: #fff;
+	font-weight: lighter;
+	height: 20px;
+/*	padding-top: 5px;
+	padding-left: 40.9px;
+	padding-right: 40.9px;
+	padding-bottom: 2px;
+*/
+	width: 124px;
+	height: auto;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	position: relative;
+	float: left;
+	margin-left: 4px;
+}
+
+.nav a
+{
+	text-decoration: none;
+	color: #eee;
+}
+
+
+.nav a:hover
+{
+	color: #DCD5D6;
+}
+
+#vid {
+	position:absolute;
+	top:150px;
+	left:4px;
+	z-index:50;
+}
+
+.vid_container {
+	width:960px;
+	height:583px;
+	overflow:hidden;
+	position:relative;
+	border: 10px solid black;
+	left: -10px;
+	box-shadow: 0 0 15px #777;
+}
+
+.vid_container div.slide {
+	width:960px;
+	height:590px;
+	display:block;
+}
+
+
+/* webkit scroller */
+::-webkit-scrollbar-thumb:vertical { height:10px; background-color: #777; }
+::-webkit-scrollbar { width:5px; height:5px; background: #DCD5D6; margin-right:5px; }
+
